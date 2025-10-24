@@ -144,3 +144,118 @@
     }
   }
 }
+
+.why-choose-us {
+  position: relative;
+  background: url('../images/Rectangle\ 41444.png') center/cover - no-repeat;
+  color: #ffffff;
+  padding: 100px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+    }
+  }
+
+   .text-content {
+    max-width: 560px;
+
+    h2 {
+      font-family: 'Aleo', serif;
+      font-weight: 400;
+      font-size: 36px;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 16px;
+      color: #e8e8e8;
+      line-height: 1.6;
+      margin-bottom: 48px;
+    }
+
+    .explore-btn {
+      background: linear-gradient(to right, #496bfe, #5474fd);
+      color: #ffffff;
+      border: none;
+      font-family: 'Aleo', serif;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 1.2px;
+      padding: 18px 48px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus {
+        background: linear-gradient(to right, #5474fd, #496bfe);
+        transform: translateY(-2px);
+      }
+    }
+  }
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px; // vertical space between images
+    position: relative;
+    width: 400px;
+
+    img {
+      width: 350px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .img-top {
+      position: relative;
+      margin-bottom: 60px;
+      margin-top: 40px;
+      z-index: 2;
+    }
+
+    .img-bottom {
+      position: relative;
+      z-index: 1;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 900px) {
+      .img-top {
+        margin: 0;
+      }
+      
+      .img-bottom {
+        margin: 0;
+
+      }
+
+      img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  }
+ }
+
+
