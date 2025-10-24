@@ -1,0 +1,108 @@
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  font-family: "Aleo", serif;
+  color: #ffffff;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+.hero .hero-bg {
+  position: absolute;
+  inset: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url("../images/hero-bg.png") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/hero-bg.png") center/cover no-repeat;
+  background-attachment: scroll;
+  z-index: 0;
+}
+.hero .hero-content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  text-align: center;
+}
+.hero .hero-content .hero-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+}
+.hero .hero-content .hero-subtitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.hero .hero-content .search-form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.hero .hero-content .search-form input {
+  border: none;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-family: "Aleo", serif;
+  color: #333;
+  width: 340px;
+  outline: none;
+}
+.hero .hero-content .search-form input::-webkit-input-placeholder {
+  color: #999;
+}
+.hero .hero-content .search-form input::-moz-placeholder {
+  color: #999;
+}
+.hero .hero-content .search-form input:-ms-input-placeholder {
+  color: #999;
+}
+.hero .hero-content .search-form input::-ms-input-placeholder {
+  color: #999;
+}
+.hero .hero-content .search-form input::placeholder {
+  color: #999;
+}
+.hero .hero-content .search-form button {
+  background: #5474fd;
+  color: #fff;
+  border: none;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  padding: 16px 24px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.hero .hero-content .search-form button i {
+  margin-left: 6px;
+}
+.hero .hero-content .search-form button:hover, .hero .hero-content .search-form button:focus {
+  background: #3b60fd;
+}
+.hero .hero-content .scroll-down {
+  margin-top: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+.hero .hero-content .scroll-down i {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+}

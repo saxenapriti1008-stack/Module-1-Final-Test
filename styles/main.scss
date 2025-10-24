@@ -1,0 +1,99 @@
+@import 'variable';
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url('../images/hero-bg.png') center/cover no-repeat;
+    background-attachment: scroll;
+    z-index: 0;
+  }
+
+  .hero-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    text-align: center; // only center hero content, not nav
+
+    .hero-title {
+      font-family: $font-title;
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 6px;
+      letter-spacing: 2px;
+    }
+
+    .hero-subtitle {
+      font-family: $font-title;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+    .search-form {
+      display: inline-flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+      input {
+        border: none;
+        padding: 16px 20px;
+        font-size: 14px;
+        font-family: $font-body;
+        color: #333;
+        width: 340px;
+        outline: none;
+
+        &::placeholder {
+          color: #999;
+        }
+      }
+
+      button {
+        background: $accent-color;
+        color: #fff;
+        border: none;
+        font-family: $font-body;
+        font-size: 14px;
+        letter-spacing: 0;
+        padding: 16px 24px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        i {
+          margin-left: 6px;
+        }
+
+        &:hover,
+        &:focus {
+          background: darken($accent-color, 5%);
+        }
+      }
+    }
+
+    .scroll-down {
+      margin-top: 60px;
+      font-family: $font-title;
+      font-size: 14px;
+      color: #fff;
+
+      i {
+        display: block;
+        margin-top: 8px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+ 

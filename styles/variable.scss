@@ -1,0 +1,15 @@
+$primary-color: #ffffff;
+$bg-color: #f2f2f2;
+$accent-color: #5474fd;
+$font-title: 'Josefin Sans', sans-serif;
+$font-body: 'Aleo', serif;
+
+body {
+  background-color: $bg-color;
+  margin: 0;
+  font-family: $font-body;
+  color: $primary-color;
+}
+
+
+
