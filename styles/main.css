@@ -160,7 +160,7 @@ body {
 
 .why-choose-us {
   position: relative;
-  background: url("../images/Rectangle 41444.png") center/cover-no-repeat;
+  background: url("../images/Rectangle 41444.png") center/cover no-repeat;
   color: #ffffff;
   padding: 100px;
 }
