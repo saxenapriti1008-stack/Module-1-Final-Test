@@ -23,7 +23,6 @@
     text-align: center; // only center hero content, not nav
 
     .hero-title {
-      font-family: $font-title;
       font-weight: 700;
       font-size: 24px;
       margin-bottom: 6px;
@@ -31,7 +30,6 @@
     }
 
     .hero-subtitle {
-      font-family: $font-title;
       font-size: 22px;
       font-weight: 400;
       margin-bottom: 40px;
@@ -203,7 +201,7 @@
       &:hover,
       &:focus {
         background: linear-gradient(to right, #5474fd, #496bfe);
-        transform: translateY(-2px);
+       
       }
     }
   }
@@ -314,5 +312,105 @@
     height: 200px;
     z-index: 1;
     pointer-events: none;
+  }
+}
+
+.travel-section {
+  display: flex;
+  flex-direction: column;
+
+  .travel-group {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &.group1 {
+      background-image: url('../images/group1.png');
+      justify-content: flex-start; // box on left
+    }
+
+    &.group2 {
+      background-image: url('../images/group2.png');
+      justify-content: flex-end; // box on right
+    }
+
+    .travel-overlay {
+      background: rgba(35, 35, 35, 0.9); 
+      color: #fff;
+      width: 543px;
+      padding: 40px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      border-radius: 4px;
+     
+
+      .country {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        color: #e8e8e8;
+        letter-spacing: 1.5px;
+        line-height: 26px;
+      }
+
+      .title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 26px;
+      }
+
+      .description {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 16px;
+        color: #e8e8e8;
+        line-height: 26px;
+        margin-bottom: 20px;
+      }
+
+      .book-btn {
+        background: linear-gradient(to right, #496bfe, #5474fd);
+        color: #fff;
+        font-family: 'Aleo', serif;
+        font-size: 16px;
+        letter-spacing: 1.2px;
+        line-height: 26px;
+        padding: 14px 38px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        align-self: flex-start;
+
+        &:hover {
+          background: linear-gradient(to right, #5474fd, #496bfe);
+          
+        }
+      }
+    }
+  }
+
+   /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .travel-group {
+      justify-content: center;
+
+      .travel-overlay {
+        width: 90%;
+        padding: 30px;
+        text-align: center;
+
+        .book-btn {
+          align-self: center;
+        }
+      }
+    }
   }
 }

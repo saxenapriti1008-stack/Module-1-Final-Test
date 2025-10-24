@@ -28,14 +28,12 @@ body {
   text-align: center;
 }
 .hero .hero-content .hero-title {
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 6px;
   letter-spacing: 2px;
 }
 .hero .hero-content .hero-subtitle {
-  font-family: "Josefin Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 40px;
@@ -224,8 +222,6 @@ body {
 .why-choose-us .text-content .explore-btn:hover, .why-choose-us .text-content .explore-btn:focus {
   background: -webkit-gradient(linear, left top, right top, from(#5474fd), to(#496bfe));
   background: linear-gradient(to right, #5474fd, #496bfe);
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
 }
 .why-choose-us .images {
   display: -webkit-box;
@@ -344,4 +340,120 @@ body {
   height: 200px;
   z-index: 1;
   pointer-events: none;
+}
+
+.travel-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Responsive adjustments */
+}
+.travel-section .travel-group {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.travel-section .travel-group.group1 {
+  background-image: url("../images/group1.png");
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.travel-section .travel-group.group2 {
+  background-image: url("../images/group2.png");
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.travel-section .travel-group .travel-overlay {
+  background: rgba(35, 35, 35, 0.9);
+  color: #fff;
+  width: 543px;
+  padding: 40px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  border-radius: 4px;
+}
+.travel-section .travel-group .travel-overlay .country {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: #e8e8e8;
+  letter-spacing: 1.5px;
+  line-height: 26px;
+}
+.travel-section .travel-group .travel-overlay .title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 26px;
+}
+.travel-section .travel-group .travel-overlay .description {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: #e8e8e8;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.travel-section .travel-group .travel-overlay .book-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#496bfe), to(#5474fd));
+  background: linear-gradient(to right, #496bfe, #5474fd);
+  color: #fff;
+  font-family: "Aleo", serif;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  line-height: 26px;
+  padding: 14px 38px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.travel-section .travel-group .travel-overlay .book-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#5474fd), to(#496bfe));
+  background: linear-gradient(to right, #5474fd, #496bfe);
+}
+@media (max-width: 900px) {
+  .travel-section .travel-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .travel-section .travel-group .travel-overlay {
+    width: 90%;
+    padding: 30px;
+    text-align: center;
+  }
+  .travel-section .travel-group .travel-overlay .book-btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
