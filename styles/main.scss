@@ -97,3 +97,48 @@
 
 
  
+.bottom-nav {
+  background: #5474fd;
+  color: #fff;
+  font-family: 'Aleo', serif;
+  position: relative;
+  z-index: 10;
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 18px 60px;
+  }
+
+  .nav-logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
