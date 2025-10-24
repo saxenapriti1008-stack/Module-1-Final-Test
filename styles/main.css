@@ -283,19 +283,65 @@ body {
 }
 
 .how-it-works {
-  background: url("../images/Rectangle 9.png") centre/cover no-repeat;
-  padding: 80px;
+  background: url("../images/Rectangle 9.png") center/cover no-repeat;
+  padding: 100px 0;
   text-align: center;
   color: #fff;
+  position: relative;
 }
 .how-it-works .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 150px;
+  position: relative;
+  z-index: 2;
+}
+.how-it-works .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+  gap: 15px;
+}
+.how-it-works .step i {
+  font-size: 42px;
+}
+.how-it-works .step i:first-of-type {
+  color: #496bfe;
+}
+.how-it-works .step:nth-child(2) i {
+  color: #ff6363;
+}
+.how-it-works .step:nth-child(3) i {
+  color: #496bfe;
+}
+.how-it-works .step h3 {
+  font-family: "Aleo", serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.how-it-works .arcs {
   position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 200px;
   z-index: 1;
+  pointer-events: none;
 }
