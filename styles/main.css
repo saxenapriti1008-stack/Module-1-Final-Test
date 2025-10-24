@@ -281,3 +281,21 @@ body {
     height: auto;
   }
 }
+
+.how-it-works {
+  background: url("../images/Rectangle 9.png") centre/cover no-repeat;
+  padding: 80px;
+  text-align: center;
+  color: #fff;
+}
+.how-it-works .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 150px;
+  position: absolute;
+  z-index: 1;
+}

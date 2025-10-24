@@ -258,4 +258,21 @@
   }
  }
 
+ .how-it-works {
+  background: url('../images/Rectangle\ 9.png') centre/cover no-repeat;
+  padding: 80px;
+  text-align: center;
+  color: #fff;
+  
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 150px;
+    position: absolute;
+    z-index: 1;
+  }
+
+ }
+
 
