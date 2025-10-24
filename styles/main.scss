@@ -108,6 +108,8 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 18px 60px;
   }
 
@@ -126,7 +128,7 @@
     padding: 0;
 
     li {
-      margin-left: 20px;
+      margin-left: 40px;
     }
 
     a {

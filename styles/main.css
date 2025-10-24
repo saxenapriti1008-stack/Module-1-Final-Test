@@ -120,6 +120,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 18px 60px;
 }
 .bottom-nav .nav-logo {
@@ -138,7 +144,7 @@ body {
   padding: 0;
 }
 .bottom-nav ul li {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .bottom-nav ul a {
   text-decoration: none;
